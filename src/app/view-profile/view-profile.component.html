@@ -1,0 +1,13 @@
+<p>view-profile works!</p>
+<div *ngFor="let data of profileInfo">
+  <div class="card shadow m-5 " style="width: 250px;">
+      <img [src]="data.avatar"  alt="">
+      <div class="card-body">
+
+          <p>Id:{{data.id}}</p>
+          <p>Email:{{data.email}}</p>
+          <p>First Name:{{data.first_name}}</p>
+          <p>Last Name:{{data.last_name}}</p>
+      </div>
+  </div>
+</div>

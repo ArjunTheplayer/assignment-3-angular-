@@ -1,0 +1,21 @@
+<p>user works!</p>
+<div class="card w-75 mx-auto mt-5">
+  <div class="row row-cols-md-2  justify-content-between text-center">
+    <div class="col col-md-6">
+      <p>page : {{userData.page}}</p>
+      <p>per-page : {{userData.per_page}} </p>
+    </div>
+    <div class="col col-md-6">
+      <p>total : {{userData.total}}</p>
+      <p>total pages : {{userData.total_pages}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h4>Users Id</h4>
+      <div *ngFor="let user of userData.data" class="m-2">id 
+        <button class="btn btn-secondary" (click)="viewUser(user.id)">{{user.id}}</button>
+      </div>
+    </div>
+  </div>
+</div>
